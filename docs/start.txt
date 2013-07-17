@@ -1,0 +1,24 @@
+'''MAKEPHAR'''
+
+Para usar este conversor de diretórios em PHAR siga os passos:
+
+# Copie o conteúdo do diretório 'www' para seu servidor web;
+# Aponte o seu navegador web para o arquivo ''''core.php''''; 
+
+Uma interface web será mostrada com as configurações do MAKEPHAR..
+
+# Selecione o diretório que contenha sua aplicação web (site em PHP);
+# Selecione o local onde será criado o arquivo resultante. O arquivo deve ter a extenção '.phar' e não pode ser localizado no mesma diretório do ítem 1.
+# Marque a opção de 'Compactação';
+# Clique no botao 'Criar Arquivo PHAR';
+
+Todo o projeto 'make' também pode ser convertido em Phar para posteriores utilizações, bastando usar o próprio MAKEPHAR para isso. Caso o servidor onde for usar o 'make.phar' não reconheça arquivos desse tipo você terá duas opções:
+
+* Configure seu servidor web para considerar a extensão ".phar" como um executável pelo PHP (''no Apache adicione essa linha: '''AddType application/x-httpd-php .phar ''''');
+* Renomei a extençaõ do arquivo para ".php" ( ''Ex.:- make.phar -> '''make.php '''''). 
+
+'''Contatos:'''
+
+Skype: neosphp
+
+Email: prbr@ymail.com
