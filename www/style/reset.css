@@ -1,4 +1,4 @@
-/* reset.css */
+/* CSS Reset File */
 html {margin:0;padding:0;border:0;}
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
 article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
@@ -11,7 +11,7 @@ blockquote, q {quotes:"" "";}
 a img {border:none;}
 :focus {outline:0;}
 
-/* typography.css */
+/* Typography */
 html {font-size:100.01%;}
 body {font-size:75%;color:#222;background:#513;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
@@ -65,7 +65,7 @@ caption {background:#eee;}
 .top {margin-top:0;padding-top:0;}
 .bottom {margin-bottom:0;padding-bottom:0;}
 
-/* forms.css */
+/* Forms */
 label {font-weight:bold;}
 fieldset {padding:0 1.4em 1.4em 1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
 legend {font-weight:bold;font-size:1.2em;margin-top:-0.2em;margin-bottom:1em;}
@@ -89,23 +89,3 @@ form.inline p {margin-bottom:0;}
 .notice a {color:#514721;}
 .success a {color:#264409;}
 .info a {color:#205791;}
-
-/*PHAR*/
-*{font-size:11px; color:#135}
-body { margin:0 auto; background:#513}
-input[type=text] { width:98%; padding:6px; margin-bottom:20px; font-size:14px; color:#900}
-textarea{ height:50px; width:97%}
-label {font-size:10px}
-label.chkbox { font-size:13px; padding-bottom:10px }
-code {display:block; background:#EEE url(cut.png) -12px 4px no-repeat; margin:10px 0; padding:10px 10px 10px 30px; color:#666; font-style:italic; border:2px dashed #CCC}
-h1 { margin:0 0 20px 0; padding:0; color:#F60}
-.container { width:400px; margin:20px auto; border:1px solid #301; border-radius:8px; background:#FFF; padding:30px; box-shadow:0 30px 40px #301}
-.helper { padding-bottom:60px;}
-input[type=button], input[type=submit] {padding:6px 10px 6px 22px; border:1px solid #CCC; border-radius:5px; background:#EEE url(go.png) 4px center no-repeat; cursor:pointer}
-input[type=button]:hover, input[type=submit]:hover { border:1px solid #835}
-p b, li b{ color:#000}
-.links { float:right; background-image:url(hlp.png) !important}
-.license { width:455px; margin:0 auto 40px auto; border:none; padding:0 5px; color:#C79; z-index:-1}
-.license p { font-style:italic; font-size:9px; color:#A57}
-.license a { text-decoration:none; color:#A57; font-size:1.2em}
-.license a:hover { text-decoration:underline}
