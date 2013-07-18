@@ -36,12 +36,6 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
         <base href="<?php echo URL_BASE; ?>" >
         <link rel="shortcut icon" href="img/favicon.ico">
         <link href="style/main.css" rel="stylesheet" type="text/css" >
-        <script language="javascript">
-            function offMsg() {
-                document.getElementsByClassName('msg').item('p').style.display = 'none'
-            }
-            var t = setTimeout("offMsg()", 14000)
-        </script>
     </head>
     <body>
         <div class="container">
@@ -70,5 +64,6 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
                 <p>É PROIBIDA A COMERCIALIZAÇÃO, DISTRIBUIÇÃO POR QUALQUER MEIO, MODIFICAÇÃO, ALTERAÇÃO E SER USADO COMO BASE OU PARTE DE OUTRO SISTEMA OU SOFTWARE SEM A DIVULGAÇÃO DESTE TEXTO TITULADO COMO LICENÇA E NOME E DADOS DE CONTATO DO AUTOR NO MESMO SUPORTE OU MEDIA, LEGÍVEL PARA O USUÁRIO.</p>
             </div>
         </div>
+        <script type="text/javascript" src="script/main.js"></script>
     </body>
 </html>
