@@ -4,12 +4,12 @@ function makephar($origem, $destino, $init = 'index.php', $compactar = true){
     ini_set('memory_limit', '30M');
     ini_set('max_execution_time', 180);
 
-    $dir = trim($origem, ' \\/').'/';
+    $dir = rtrim($origem, ' \\/').'/';
     $stub = trim(htmlspecialchars_decode('&lt;?php include(\'phar://\' . __FILE__ . \'/' . $init . '\');__HALT_COMPILER();'), ' ');
 
     if(is_dir($dir)){
         //criando arquivo PHAR
-        $phar = new Phar(trim($destino, ' \\/'));
+        $phar = new Phar(rtrim($destino, ' \\/'));
 
         //pegando o diretório (e sub-diretórios) e arquivos contidos
         $phar->buildFromDirectory($dir);

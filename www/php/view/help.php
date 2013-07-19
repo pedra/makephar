@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>MAKEPHAR | Administrador</title>
+        <title>MAKEPHAR | Help</title>
         <base href="<?php echo URL_BASE;?>" />
         <link rel="shortcut icon" href="img/favicon.ico"/>
         <link href="style/main.css" rel="stylesheet" type="text/css" />

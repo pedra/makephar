@@ -27,6 +27,16 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
     $destino = dirname(RPATH).DIRECTORY_SEPARATOR.'newfile.phar';
     $init = 'index.php';
 }
+
+
+//DEBUGS ->
+//    echo 'path_dir: '.PATH_DIR.'<br>';
+//    echo 'name_file: '.NAME_FILE.'<br>';
+//    echo 'path_php: '.PATH_PHP.'<br>';
+//    $view = new View;
+//    $factory = Doc\Factory::teste();
+//DEBUGS <-
+
 ?>
 <!DOCTYPE HTML>
 <html>
