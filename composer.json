@@ -1,5 +1,5 @@
 {
-    "name": "MakePhar",
+    "name": "pedra/makephar",
     "description": "PHAR file converter with web interface.",
     "type": "application",
     "keywords": ["phar","converter","php"],
