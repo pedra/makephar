@@ -1,2 +1,2 @@
 <?php
-include 'php/core.php';
+include 'php/lib/neos/core.php';
