@@ -23,7 +23,7 @@ define('RPATH', inPhar());//RealPath - quando estiver em modo PHAR
 
 //carregador automático de classes
 loader();
-echo 'ctrl: '.NAME_FILE;
+
 //incluindo a VIEW de execução solicitada
 $inc = VIEW . NAME_FILE;
 if (is_file($inc)) include($inc);

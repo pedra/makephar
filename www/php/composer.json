@@ -3,8 +3,6 @@
 		"vendor-dir": "lib"
 		},
     "require": {
-        "monolog/monolog": "1.0.*",
-        "mheap/gravatar-php": "dev-master",
-        "react/react": "0.3.*"
+        "monolog/monolog": "1.0.*"
     }
 }
