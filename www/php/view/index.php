@@ -17,15 +17,21 @@ if (function_exists('ini_get')) {
 
 //Processando a conversão PHAR
 if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])){
-    include LIB.'makephar.php';
+    //include LIB.'makephar.php';
     $origem = $_POST['origem'];
     $destino = $_POST['destino'];
     $init = $_POST['init'];
-    $msg .= makephar($origem, $destino, $init, isset($_POST['compactar']));
+    $tipo = $_POST['tipo'];
+    //$msg .= makephar($origem, $destino, $init, isset($_POST['compactar']));
+    $mp = Lib\Util\File::makePhar($origem, $destino, $init, true, $tipo);
+    if(is_string($mp)) $msg.= $mp;
+    else $msg.= $mp === false ? 'Erro na compilação!':'Arquivo PHAR criado com sucesso!';
+    $msg.= '<br>';
 } else {
     $origem = RPATH;
     $destino = dirname(RPATH).DIRECTORY_SEPARATOR.'newfile.phar';
     $init = 'index.php';
+    $tipo = 'ex';
 }
 
 
@@ -63,6 +69,13 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
 
                     <label>Default (executar este arquivo como default):</label>
                     <input name="init" type="text" value="<?php echo $init; ?>" title="Um arquivo da sua aplicação que deve ser executado como default. Ex.: index.php"/>
+
+                    <label>Tipo de Arquivo PHAR:</label>
+                    <select name="tipo">
+                        <option value="ex" <?php if($tipo == 'ex') echo 'selected'?>>Executável (depende de framework ePhar)</option>
+                        <option value="wp" <?php if($tipo == 'wp') echo 'selected'?>>Aplicação transparente</option>
+                        <option value="dt" <?php if($tipo == 'dt') echo 'selected'?>>Data PHAR (para usar como libPhar)</option>
+                    </select>
 
                     <p title="Compactar o arquivo pode te dar maior segurança. Consulte a documentação do PHP para mais detalhes.">
                         <label class="chkbox"><input name="compactar" type="checkbox" value="1" checked/>Compactar (gz/bz2)!</label>
