@@ -19,7 +19,7 @@ class File extends \Lib\Base {
      * @param String $file	Caminho e nome do arquivo ".ini"
      *
      * @return Bool|String	Se $file for indicado retorna o status da criação/grvação do arquivo
-      Se $file não for indicado retorna uma string com os dados convertidos
+     * Se $file não for indicado retorna uma string com os dados convertidos
      */
     static
             function toIniFile($ini, $file = null){
