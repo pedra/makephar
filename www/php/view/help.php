@@ -5,6 +5,7 @@
         <title>MAKEPHAR | Help</title>
         <base href="<?php echo URL_BASE;?>" />
         <link rel="shortcut icon" href="img/favicon.ico"/>
+        <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" >
         <link href="style/main.css" rel="stylesheet" type="text/css" />
     </head>
 
@@ -33,4 +34,7 @@
         </div>
 
     </body>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
 </html>

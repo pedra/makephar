@@ -51,6 +51,7 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
         <title>MAKEPHAR</title>
         <base href="<?php echo URL_BASE; ?>" >
         <link rel="shortcut icon" href="img/favicon.ico">
+        <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" >
         <link href="style/main.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
@@ -67,7 +68,7 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
                     <label>Destino (arquivo):</label>
                     <input name="destino" type="text" value="<?php echo $destino; ?>" title="O arquivo (com extensão '.phar') que conterá a aplicação."/>
 
-                    <label>Default (executar este arquivo como default):</label>
+                    <label>Default <span class="quiet">(executar este arquivo como default)</span>:</label>
                     <input name="init" type="text" value="<?php echo $init; ?>" title="Um arquivo da sua aplicação que deve ser executado como default. Ex.: index.php"/>
 
                     <label>Tipo de Arquivo PHAR:</label>
@@ -87,6 +88,8 @@ if (isset($_POST['origem']) && isset($_POST['destino']) && isset($_POST['init'])
                 <p>É PROIBIDA A COMERCIALIZAÇÃO, DISTRIBUIÇÃO POR QUALQUER MEIO, MODIFICAÇÃO, ALTERAÇÃO E SER USADO COMO BASE OU PARTE DE OUTRO SISTEMA OU SOFTWARE SEM A DIVULGAÇÃO DESTE TEXTO TITULADO COMO LICENÇA E NOME E DADOS DE CONTATO DO AUTOR NO MESMO SUPORTE OU MEDIA, LEGÍVEL PARA O USUÁRIO.</p>
             </div>
         </div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type="text/javascript" src="script/main.js"></script>
     </body>
 </html>

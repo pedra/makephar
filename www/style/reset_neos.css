@@ -91,3 +91,5 @@ form.inline p {margin-bottom:0;}
 .notice a {color:#514721;}
 .success a {color:#264409;}
 .info a {color:#205791;}
+
+input, select, textarea, button {border:1px solid #DDD !important; border-radius:3px; box-shadow:0 -10px 30px #F4F4F4 inset; padding:5px }

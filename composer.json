@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"name": "laravel/laravel",
 	"description": "The NO Framework.",
 	"keywords": ["framework", "NOFrame"],
@@ -34,3 +35,27 @@
 	},
 	"minimum-stability": "dev"
 }
+=======
+    "name": "pedra/makephar",
+    "description": "PHAR file converter with web interface.",
+    "type": "application",
+    "keywords": ["phar","converter","php"],
+    "homepage": "http://github.com/pedra/makephar",
+    "license": "GLP3",
+    "authors": [
+  {
+		"name": "Paulo Rocha",
+		"email": "prbr@ymail.com",
+		"homepage": "http://itbras.com"
+	}
+    ],
+    "require": {
+	"php": ">=5.4.0"
+    },
+    "autoload": {
+	"psr-0": {
+		"pedra\\mekephar": "wwww/"
+	}
+    }
+}
+>>>>>>> 698163a90c6e222aa1fb71529e925946b2eaf022
