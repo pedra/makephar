@@ -16,6 +16,7 @@ defined('PPHP') || define('PPHP', PATH.'php/');
 defined('VIEW') || define('VIEW', PPHP.'view/');
 defined('LIB')  || define('LIB', PPHP.'lib/');
 //URL_BASE = base para os arquivos html => <base href="<?php echo URL_BASE;? >" />
+if(!isset($_SERVER['REQUEST_SCHEME'])) $_SERVER['REQUEST_SCHEME'] = 'http';
 $tp = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].'/'
                     .trim((isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : $_SERVER['PHP_SELF']), '/ ').'/';
 define('URL_BASE', ((NEOS_PHAR) ? $tp : dirname($tp).'/'));
