@@ -1,36 +1,23 @@
 {
-	"name": "laravel/laravel",
-	"description": "The NO Framework.",
-	"keywords": ["framework", "NOFrame"],
-	"require": {
-		"NO/framework": "4.0.*"
-	},
-	"autoload": {
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+	"name": "pedra/makephar",
+    	"description": "PHAR file converter with web interface.",
+    	"type": "application",
+    	"keywords": ["phar","converter","php"],
+    	"homepage": "http://github.com/pedra/makephar",
+    	"license": "GLP3",
+    	"authors": [
+  	{
+		"name": "Paulo Rocha",
+		"email": "prbr@ymail.com",
+		"homepage": "http://itbras.com"
+	}
+    ],
+    "require": {
+	"php": ">=5.4.0"
+    },
+    "autoload": {
+	"psr-0": {
+		"pedra\\makephar": "wwww/"
+	}
+    }
 }
