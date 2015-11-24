@@ -1,5 +1,6 @@
 Makephar
 ========
+[![Build Status](https://travis-ci.org/pedra/makephar.svg)](https://travis-ci.org/pedra/makephar)
 
 Web interface for creating PHAR files from web applications developed in PHP.
 
